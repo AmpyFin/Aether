@@ -1,4 +1,4 @@
-# Aether-Model
+# Aether System
 
 A sophisticated market analysis system that identifies macrotrends using a combination of technical indicators and market sentiment analysis. The system focuses on what has already happened rather than predictions, providing clear signals through various market conditions.
 

@@ -36,17 +36,25 @@ A sophisticated market analysis system that identifies macrotrends using a combi
    - Yen funding and rate differential insights
    - Multiple risk-off patterns
 
-### Derived Indicators
+### Reactionary Derived Indicators (High Signal-to-Noise)
+
+These ratio-based indicators provide cleaner market reads by filtering out noise:
 
 1. **Credit Stress Proxy (HYG/LQD)**
-   - High signal-to-noise ratio
+   - High signal-to-noise ratio through log-ratio analysis
    - Cleaner credit stress readings
-   - Widening and healing signals
+   - Key triggers:
+     * Risk-off: z_v_5d ≤ -0.8 (widening)
+     * Healing: z_v_5d ≥ +0.5
+   - Filters out rate-only moves
+   - Confirms primary indicator signals
 
 2. **Growth vs Safety (GC=F/^TNX)**
-   - Real-rate environment assessment
-   - Simplified gold vs yields context
-   - Trend confirmation tool
+   - Real-rate environment assessment via log-ratio
+   - Optional if using GC=F and ^TNX separately
+   - Key trigger: z_v_5d ≥ +0.7 flags real-rate tailwind
+   - Particularly useful during yield volatility
+   - Provides cleaner reads than individual components
 
 ## Velocity Indicators (/velocity_indicator)
 
